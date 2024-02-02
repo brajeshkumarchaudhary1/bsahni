@@ -1,0 +1,280 @@
+*{
+	margin: 0 0 0 0;
+	padding: 0;
+}
+body {
+    font-size: 15pt;
+}
+
+header{
+	background-color: thistle;
+	height: 8vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	z-index: 9;
+}
+
+
+          /* menu  animation */
+          
+ 
+
+.container{
+/* 	width: 100%; */
+/* 	height: 100%; */
+/*   background: #0d0024; */
+/* 	display: flex;     */ 
+   display: none;                      /* in js use display: flex; */
+	align-items: center;
+	justify-content: center;
+	border-radius:0 30% 0 0;
+	background-color: gray;
+	padding: 6px;
+	
+}
+
+
+.menu{
+	
+	width: 30px;
+	height: 30px;
+/* 	margin: 8px; */
+/* 	background-image: linear-gradient(to right, #e91e63, #f44336); */
+background-color: transparent;
+  border-radius: 5px;
+	cursor: pointer;
+	
+}
+
+.menu div{
+	width: 20px;
+	height: 20px;
+  margin: 0;
+	position: relative;
+}
+.menu span{
+	/* background: #fff; */
+	background-color: white;
+	width: 100%;
+	height:10%;
+	border-radius: 5px;
+	display: block;
+	position: absolute;
+  top: 70%;
+  left:70%;
+	transform: translate(-50%, -50%);
+	transition: transform 0.5s, width 0.5s;
+}
+.menu .line-1{
+	transform: translate(-50%, -8px);
+}
+
+.menu .line-3{
+	transform: translate(-50%, 6px);
+}
+
+
+
+.openmenu .line-1{
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+.openmenu .line-3{
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+.openmenu .line-2 {
+	width:0 ;
+}
+
+
+
+
+
+
+
+
+.logo-head{
+	background-color: transparent;
+	color: black;
+	
+}
+.logo-head a{
+	
+	text-decoration: none;
+	color: #000;
+	
+}
+.logo-head h1{
+	font-size: 36px;
+	
+}
+
+.searchbar input{
+position: absolute;
+   right: 38px;
+   top: 8vh;
+font-size: 15px;
+z-index: 10;
+padding: 5px;
+border: 3px solid black;
+border-radius: 10px 0px 15px 10px;
+box-shadow: 3px 3px 6px;
+display: none;
+
+}
+
+
+.searchbar button{
+	display: block;
+	padding: 10px;
+	background-color: transparent;
+	border: none;
+	border-radius: 15px 0px 0px;
+	background-color:grey;
+	color: #ffff;
+	font-size: 20px;
+	font-weight: 600;
+
+}
+.searchbar button:hover{
+background-color: red;
+opacity: 60%;
+}
+
+
+
+.searchbar button:active{
+	background-color: darkred;
+}
+
+
+
+nav{
+	background: black;
+	
+}
+.drop-items{
+	display: flex;
+	justify-content: space-between;
+}
+nav .drop-list{
+	display: none;
+}
+
+nav h4{
+	color: crimson;
+}
+nav a {
+	display: block;
+	text-decoration: none;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#badyMain{
+	background-color: lightsalmon;
+	transition: transform 0.5s;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+.backopacity{
+
+	display: absolute;
+	transform: translate(220px, 0px);
+}
+
+
+
+
+.container{
+		display: flex;
+	}
+	
+
+	
+	 .drop-items {
+	 	display: block;
+	 	margin: 0 0 0 0;
+	 	padding: 20px;
+	 	position: absolute;
+	 	width: 220px;
+	 	background-color: black;
+	 	transition: transform 0.5s;
+	 }
+ .navbar .drop-items{
+ 	transform: translate( -260px,0px);
+}
+	
+ .hidenav .drop-items{
+	transform: translate(0px, 0px);
+	 
+	}
+	
+	
+	
+	
+	.drop{
+		margin: 0 0 20px 0;
+	}
+	
+nav	.drop-list{
+		display: block;
+	}
+	
+	
+	
+	
+	
+}
